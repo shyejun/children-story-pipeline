@@ -2,6 +2,8 @@
 
 面向幼教行业人员的 3–6 岁原创故事创作与质量审核 Skill。它把大模型常见的“看起来像故事、却不适合幼儿”的输出，转成可检查、可返修的创作流程。
 
+**English:** A story-creation and quality-assurance Skill for original stories for children aged 3–6. It helps early-childhood educators and children's-content creators turn a generic model output that merely *sounds* like a story into a structured, reviewable, and revisable story-development process.
+
 > 适用对象：幼儿园教师、园所课程与教研人员、儿童内容编辑、绘本及动画创作者。
 
 ## 它解决什么问题
@@ -45,3 +47,33 @@
 ## 边界
 
 这是一套创作与质量审核流程，不替代教师、教研人员或监护人对教育目标、事实来源和儿童实际反应的专业判断。其产出在正式使用前仍应进行人工审阅与试读。
+
+---
+
+## English overview
+
+General-purpose models can produce a children's story quickly, but they do not reliably solve three issues that matter in real early-childhood practice:
+
+1. **Building a complete story from a child-sized experience.** A correct theme and cute wording can still result in a lecture, a moral, or a list of characters. The pipeline anchors one experience a young child can genuinely understand, then uses a Story Spine, causal chain, and eight beats to construct challenge, attempt, feedback, and resolution.
+2. **Making character traits drive the plot.** Model-generated characters are often interchangeable names, or an adult-like “answer machine” solves the problem for everyone. Character-causality checks require every major character to take an irreplaceable action with a distinct consequence, while preserving the trait and adjusting only the method. `REMOVE`, `SWAP`, and `CONSEQUENCE` tests expose characters that do not carry narrative work.
+3. **Protecting age fit, safety, facts, and continuity together.** For 3–6-year-olds, polished prose alone is not enough. Imitation safety, object-state continuity, causal validity, and appropriate treatment of natural, health, or cultural claims all affect whether a story can be used responsibly. The Skill runs consistency and integrity reviews, requires evidence and clear limits for verifiable claims, and routes a failure back to its earliest source for repair.
+
+### What it includes
+
+- Natural-language Story Brief focused on one core child experience
+- Character-causality and irreplaceability checks
+- Six reusable Story Engines, Story Spine, and Causal Chain
+- An eight-beat Story Master and three-pass drafting process
+- Education through action, choice, and consequence rather than preaching
+- Hard checks for factual grounding, variables, object state, and child imitation safety
+- Consistency review, regression repair, and a Current Effective Artifact
+- Adaptation handoff for picture books and animation
+
+### Modes
+
+- `STANDALONE`: create a story without an existing IP or canon.
+- `CANON_AWARE`: add consistency constraints when character bibles, world-building, locations, or prior stories are available.
+
+### Scope
+
+This is a creation and QA workflow. It does not replace the professional judgment of educators, curriculum teams, or caregivers about learning intent, source quality, or children's real-world responses. Review and read-through are still required before formal use.
